@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Instrucciones
+## Instalar el cliente de angular en el equipo que se ejecute la aplicación
+## Instalar los modulos y dependencias con npm install en la carpeta del proyecto
+## Es importante verificar que los servicios backend estén corriendo
+## Ejecutar con npm start -p 4200 para que se ejecute sobre el puerto default por configuración de CORS para socket IO
+## Iniciar sesión en una ventana con el username player1 password 1234 y en otra ventana con el username player2 y password 12345
+## Chatear
