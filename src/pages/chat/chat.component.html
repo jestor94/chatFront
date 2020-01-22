@@ -1,0 +1,34 @@
+<!-- <h3>Live Chat</h3>
+
+<div *ngFor="let message of messages">
+    {{message}}
+</div>
+
+<input [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()" />
+<button (click)="sendMessage()">Send</button> -->
+
+<div class="container">
+    <h3 style="text-align: center;">Live Chat Moons </h3>
+
+    <div class="col-md-2" style="height: 93vh; background-color: rgb(170, 94, 207);"></div>
+    <div class="col-md-8" style="height: 93vh;">
+        <div class="col-md-12" style="height: 75vh;; overflow-y:scroll; background-color: lightgray;" > 
+            <div *ngFor="let message of messages">
+                {{message}}
+            </div>
+        </div>
+        <br>
+        <div class="clearfix"></div> <br>
+        <div class="col-md-9">
+            <input class="col-md-12" [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()" />
+        </div>
+        <div class="col-md-3">
+            <button class="col-md-12" mat-raised-button color="primary">
+                Send
+                <mat-icon aria-label="">send</mat-icon>
+            </button>
+            <!-- <button class="col-md-12" (click)="sendMessage()">Send</button> -->
+        </div>
+    </div>
+    <div class="col-md-2" style="height: 93vh; background-color: rgb(170, 94, 207);"></div>
+</div>

@@ -1,0 +1,48 @@
+
+<div class="backColor" align="center">
+    <div class="clearfix">
+    </div>
+    <div class="container">
+        <br><br>
+        <mat-card class="cardSize" style="margin-top: 15%;">
+                
+            <mat-card-header end>
+                <mat-card-title style="text-align:center; margin-left: 90px;"><h3 style="text-align: center;"><b>Welcome to Moons chat live</b></h3></mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <form #login="ngForm" (ngSubmit)="Login(login)">
+                <mat-form-field class="col-xs-12 col-sm-12 col-mat-12 col-lg-12">
+                        <input matInput id="Username" name="Username" [(ngModel)]="login.Username" #name="ngModel" placeholder="User"  autocomplete="off" required>
+                </mat-form-field>
+
+                <div class="clearfix"></div>
+
+                <mat-form-field class="col-xs-12 col-sm-12 col-mat-12 col-lg-12">
+                        <input matInput id="Password" name="Password" [(ngModel)]="login.Password" #name="ngModel" type="password" placeholder="Password" required>
+                </mat-form-field>
+                <div class="clearfix"></div>
+                
+                <button mat-raised-button type="submit" color="primary" class="col-xs-6 col-sm-6 col-mat-6 col-lg-6">
+                    Login
+                    <mat-icon aria-label="">vpn_key</mat-icon>
+                </button>
+                </form>
+                <br>
+            </mat-card-content>
+            <mat-card-actions>
+
+            </mat-card-actions>
+        </mat-card>
+        <div class="clearfix"></div><br>
+    </div>
+    <div class="clearfix"></div><br>
+</div>
+
+
+
+
+
+
+
+
+
